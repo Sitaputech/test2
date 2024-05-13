@@ -1,0 +1,64 @@
+html {
+  background-image: url(win.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  max-width: 100%;
+  padding: 40px 15px;
+  margin: 0 auto;
+}
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 300px 0 300px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(82, 53, 7);
+  color: transparent;
+  font-size: 42px;
+  font-weight: bold;
+  transition: background-color.5s, color.5s;
+  cursor: url("the-witcher-3-link.png"), auto;
+  border-radius: 10px;
+}
+
+.card.open {
+  background-color: rgb(77, 85, 96);
+  color: rgb(23, 26, 27);
+}
+.card.success {
+  background-color: rgb(35, 87, 67);
+  color: rgb(2, 7, 8);
+  transform: scale(0.95);
+  opacity: 0.9;
+}
+#button {
+  border: none;
+  padding: 0.5em 1.5em;
+  background-color: black;
+  color: antiquewhite;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  cursor: url("the-witcher-3-link.png"), auto;
+}
+#button:hover {
+  opacity: 0.8;
+}
